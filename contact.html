@@ -1,5 +1,38 @@
 <div class="container text-center mt-5">
-    <h2>Contact Us</h2>
-    <p>Email: anand9999@gmail.com</p>
-    <p>Phone: +91 9876543210</p>
+    <h2 class="fw-bold text-success animate-fade-in">📞 Contact Us</h2>
+    <p class="text-muted animate-slide-up">We'd love to hear from you! Reach out to us anytime.</p>
+
+    <div class="contact-info mt-4 p-4 bg-light rounded shadow-lg animate-zoom-in">
+        <p class="mb-2"><strong>Email:</strong> 📧 <a href="mailto:anand9999@gmail.com" class="text-decoration-none text-primary">anand9999@gmail.com</a></p>
+        <p class="mb-2"><strong>Phone:</strong> 📱 <a href="tel:+919876543210" class="text-decoration-none text-dark">+91 9876543210</a></p>
+        <p class="mb-2"><strong>Address:</strong> 📍 Anand's Nursery, Green Street, Hyderabad, India</p>
+    </div>
+
+    <div class="mt-4">
+        <a href="contact-form.html" class="btn btn-success btn-lg animate-btn">📩 Send a Message</a>
+    </div>
 </div>
+
+<!-- Animations -->
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    .animate-fade-in { animation: fadeIn 1s ease-in-out; }
+    .animate-slide-up { animation: slideUp 1s ease-in-out 0.5s forwards; opacity: 0; }
+    .animate-zoom-in { animation: zoomIn 1s ease-in-out 0.8s forwards; opacity: 0; }
+    .animate-btn { transition: 0.3s; }
+    .animate-btn:hover { transform: scale(1.1); }
+</style>
